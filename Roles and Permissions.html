@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roles and Permissions</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="roles-and-permissions">Roles and Permissions</h1>
+<p>OMS Roles and Permissions can be configured in Okta by a super administrator or an LADB user who has Okta OrgAdmin group permissions.</p>
+<p>Roles and Permissions help you manage Okta user groups, including their access to specific database of titles according to their Customer Profile type.</p>
+<p>In Okta, there are four user groups, with the user group definition based on the permission types on each OMS feature:</p>
+
+<table>
+<thead>
+<tr>
+<th><strong>Feature</strong></th>
+<th><strong>Permission Type</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>OrgAdmin</strong></th>
+<th><strong>CustomerAdmin</strong></th>
+<th><strong>OrgViewer</strong></th>
+<th><strong>CustomerViewer</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dashboard</td>
+<td>Read</td>
+<td>Able to view Dashboard</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Orders</td>
+<td>Read</td>
+<td>Able to view orders only (No Order placement or editing of information in an existing order)</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>Write</td>
+<td>Able to view Orders and Edit Order information, Able to create new Orders (Order Placement)</td>
+<td>X</td>
+<td>X</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Jobs</td>
+<td>Read</td>
+<td>Able to view Jobs only</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>Write</td>
+<td>Able to view and edit job information (e.g. due dates)</td>
+<td>X</td>
+<td>X</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Pending Assets</td>
+<td>Read</td>
+<td>Able to view tasks awaiting assets, task information, and Notes only</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>Write</td>
+<td>Able to view and edit Tasks awaiting assets (e.g. Assign Tasks, move statuses, add Notes)</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Review Tasks</td>
+<td>Read</td>
+<td>Able to view Tasks, task information, and Notes only</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>Write</td>
+<td>Able to view and edit Tasks (e.g Assign Tasks, move statuses, add Notes)</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Edit Tasks</td>
+<td>Read</td>
+<td>Able to view Tasks, task information, and Notes only</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>Write</td>
+<td>Able to view and edit Tasks (e.g Assign Tasks, move statuses, add Notes)</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Processing Exceptions</td>
+<td>Read</td>
+<td>Able to view Tasks in Review status due to Task Failed</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>File Manager</td>
+<td>Read</td>
+<td>Able to browse File Manager and view transfer queue only</td>
+<td>X</td>
+<td>0</td>
+<td>X</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td>Write</td>
+<td>Able to browse, copy, and move files; Able to create new folders; Able to view the transfer queue</td>
+<td>X</td>
+<td>0</td>
+<td>X</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Profiles</td>
+<td>Read</td>
+<td>Able to view Profiles only</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>Write</td>
+<td>Able to view, edit, and create new profiles</td>
+<td>X</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+</body>
+
+</html>
